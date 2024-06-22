@@ -15,7 +15,7 @@ export class VersionService {
     private settingsService: SettingsService) { }
 
   getBackendInfo(): Observable<any> {
-    return this.http.get(this.settingsService.serverUrl()+'/actuator/info');
+    return this.http.get(this.settingsService.serverUrl+'/actuator/info');
   }
 
 }
